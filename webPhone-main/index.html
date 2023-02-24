@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>webPhone</title>
+  <link rel="stylesheet" type="text/css" href="./index.css" />
+</head>
+
+<body>
+  <h2>
+    Registration Status 
+    <div  id="square" class="square"></div>
+    <div>
+      <span style="margin-left: 15px; font-size: large;">Name - </span>
+      <code><span id="displayName" style="font-size: larger; color: blue; text-decoration: underline;"></span></code>
+    </div>
+    <br>
+    <video id="localVideo"></video>
+    <br>
+    <span style="display: flex;">
+      <label for="targetNumber" style="font-size: small;">Destination Number</label>
+      <input type="text" id="targetNumber" name="targetNumber" placeholder="Please enter Destination No." />
+    </span>
+  </h2>
+
+  <ul>
+    <li>
+      <button id="connect" disabled onload="click()">Register</button>
+      <span style="margin-left: 4px; font-size: large;">at - </span>
+      <code><span id="server" style="font-size: large; color: blue; text-decoration: underline;"></span></code>
+    </li>
+    <br>
+    <li>
+      <button id="call" disabled>Place Audio Call</button> <span style="margin-left: 15px; font-size: large;">to - </span>
+      <code><span id="target" style="font-size: large; color: blue; text-decoration: underline;"></span></code>
+    </li>
+    <br>
+    <li>
+      <button id="callv" disabled>Place Video Call</button> <span style="margin-left: 15px; font-size: large;">to - </span>
+      <code><span id="target1" style="font-size: large; color: blue; text-decoration: underline;"></span></code>
+    </li>
+    <br>
+    <li><button id="hangup" disabled>Hangup Call</button></li><br>
+    <li><button id="answer" disabled>Answer Call</button></li><br>
+    <li><button id="disconnect" disabled>Disconnect</button></li>
+  </ul>
+  <div style="margin-top: -3.5% ;">
+    <input type="checkbox" id="mute" name="mute" />
+    <label for="mute">Mute</label>
+  </div>
+
+  <p style="display:none;">
+    <strong>Dev Thing #</strong>
+    When the call is established, this audio tag will be populated with call
+    media...
+  </p>
+  <audio id="remoteAudio">
+    <p>Your browser doesn't support HTML5 audio.</p>
+  </audio>
+  <br>
+  <div id="videosec">
+    
+    <span class="video-gap"></span>
+    <video id="remoteVideo" controls></video>
+  </div>
+
+  <!-- Push to talk button -->
+  <br><br><br><br>
+  <button id="ptt-btn" class="ptt-btn">Push to Talk</button>
+
+  <audio id="ringTone" style="display: none;" loop>
+    <source src="./asset/phone_classic_ring.mp3" type="audio/mp3">
+  </audio>
+</body>
+<script src="./index.js" onerror="alert('Script Issues')"></script>
+
+</html>

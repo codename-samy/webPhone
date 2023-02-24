@@ -1,0 +1,134 @@
+h2 {
+  margin-top: 2.6%;
+  margin-left: 70%;
+  margin-right: 10%;
+}
+
+.square {
+  height: 0;
+  padding-top: 5%;
+  background-color: #0d0e0d;
+}
+
+ul {
+  margin-left: -55%;
+  margin-top: -25%;
+  list-style-type: none;
+}
+
+audio {
+  margin: 8px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ece9e6;
+  background: -webkit-linear-gradient(to right, #ffffff, #ece9e6);
+  background: linear-gradient(to right, #ffffff, #ece9e6);
+  min-height: 100%;
+  min-width: 100%;
+  margin: 0%;
+  overflow: hidden;
+  align-items: center;
+}
+
+button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 1.25em 1.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+button:disabled {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+
+@media (min-width: 768px) {
+  button {
+    padding: 0.25em 0.75em;
+  }
+}
+/* 
+button {
+  width: 170px;
+  height: 20px;
+  margin: 8px;
+  border-radius: 38%;
+} */
+
+input {
+  margin: 8px;
+}
+
+.dtmf {
+  margin: 8px;
+}
+
+.ptt-btn {
+  display: none;
+  text-decoration: underline;
+  height: auto;
+  border: groove rgb(0, 0, 0);
+  padding: 12px 10px;
+  font-size: 18px;
+  background-color: red;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s all;
+  width: 25%;
+}
+
+.ptt-btn:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  background-color: hwb(120 0% 50%);
+  color: #fff;
+}
+
+#videosec {
+  display: flex;
+}
+
+#localVideo {
+  border: 3px #000000 groove;
+  border-radius: 50%;
+  height: 200px;
+  width: 280px;
+}
+
+#remoteVideo {
+  border: 3px #000000 groove;
+  height: 250px;
+  width: 280px;
+  border-radius: 7%;
+  margin-left: -30%;
+
+}
+
+.video-gap {
+  padding: 15px 15px;
+}
